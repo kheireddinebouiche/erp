@@ -1,0 +1,39 @@
+#breadcrumb-item {
+    display: inline-block;
+    padding: 9px 15px;
+    margin-right: 20px;  /* augmenté pour laisser de la place au triangle */
+    background-color: #c2c3c3;
+    color: #ffffff;
+    position: relative; /* ajouté pour positionner ::after par rapport à cet élément */
+    width: 85px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    
+  }
+  
+ 
+  #breadcrumb-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #breadcrumb-item.active {
+    background-color: #1b1bb1;
+    color: #fff;
+  }
+  
+  #breadcrumb-item.active::after {
+    border-left-color: #1b1bb1; /* même couleur que l'arrière-plan de #breadcrumb-item.active */
+  }
+  
+  #breadcrumb-item.active a {
+    color: #fff;
+  }
+  
+  .breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content:space-evenly;
+  }
